@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-section{
+    padding: 20px 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EC8D90;
+}
+.navbar-logo img{
+    max-width: 130px;
+}
+.navbar-item{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.navbar-item li{
+    list-style-type: none;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #000000;
+    font-weight: 500;
+    transition: .3s;
+}
+.list-item{
+    text-decoration: none;
+}
+.navbar-item li:hover{
+    color: #f6d557;
+}
+.navbar-icon{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.menuBar{
+    display: none;
+}
+.menuClose{
+    display: none;
+}
+.hero-section{
+    background-color: #f6d557;
+    padding: 40px 0;
+}
+.hero-text{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    gap: 5;
+}
+.hero-text h4{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 400;
+}
+.hero-title{
+    font-size: 4rem;
+    font-weight: 600;
+    color: #EC8D90;
+}
+.hero-text p{
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+}
+.hero-image img{
+    width: 100%;
+}
+.hero-btn{
+    outline: none;
+    border: 1px solid gray;
+    background-color: #f6d557;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: black;
+    transition: .3s;
+}
+.hero-btn:hover{
+    background-color: #EC8D90;
+}
+.services-section{
+    background-color: #f6d557;
+    padding-bottom: 30px;
+}
+.services-title{
+    text-align: center;
+    padding: 50px 0;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.contact-section{
+    background-color: #f6d557;
+    padding-bottom: 30px;
+}
+.contact-title{
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 50px;
+    text-align: center;
+}
+.contact-map{
+    padding: 40px;
+    background-color: #EC8D90;
+    border-radius: 20px;
+}
+.fcontact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5;
+    background-color: #EC8D90;
+    padding: 50px 30px;
+    box-shadow: 0 0 5px #f6d557;
+    border-radius: 20px;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.fcontact input, textarea{
+    outline: none;
+    border: 1px solid #f6d557;
+    width: 60%;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin: 10px 0;
+}
+.fcontact textarea:focus{
+    box-shadow: 0 0 10px #f6d557;
+}
+.fcontact input:focus{
+    box-shadow: 0 0 10px #f6d557;
+}
+input[type="submit"]{
+    width: 150px;
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    background-color: #f6d557;
+    transition: .3s;
+    margin-top: 10px;
+}
+input[type="submit"]:hover{
+    background-color: #EC8D90;
+}
+.footer-section{
+    background-color: #EC8D90;
+    padding-top: 30px;
+}
+.footer-logo img{
+    max-width: 150px;
+    padding-bottom: 20px;
+}
+.footer-text{
+    padding: 10px;
+}
+.footer-text p{
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #000;
+}
+.footer-title{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: black;
+    padding-bottom: 20px;
+}
+.footer-navbar{
+    display: block;
+    text-decoration: none;
+    font: 18px;
+    color: #000;
+    font-weight: 400px;
+    text-transform: capitalize;
+    padding: 5px 0;
+    transition: .3s;
+}
+.footer-navbar:hover{
+    color: #f6d557;
+}
+.copyright-section{
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #f6d557;
+}
+.copyright-section p{
+    text-transform: capitalize;
+    color: #f6d557;
+    font-size: 20px;
+}
+
+/* Media queries */
+@media(max-width: 776px){
+    .navbar-item{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        background-color: #EC8D90;
+        height: 100%;
+        width: 100%;
+        transition: .3s;
+    }
+    .menuBar{
+        display: block;
+    }
+    .active .navbar-item{
+        right: 0;
+    }
+    .active .menuBar{
+        display: none;
+    }
+    .active .menuClose{
+        display: block;
+        z-index: 3;
+        position: relative;
+    }
+}
